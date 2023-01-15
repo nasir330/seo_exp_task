@@ -16,19 +16,22 @@
                         <div class="card">
                             <div class="card-title">Sign In</div>
                             <div class="card-body">
-                                <form action="">
+                                <!-- Login form start -->
+                                <form action="{{route('login')}}" method="post">
+                                    @csrf
                                     <div class="mt-3">
-                                        <label for="" class="form-label">Email</label>
-                                        <input type="email" class="form-control u-box-shadow-1" name="" />
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control u-box-shadow-1" name="email" />
                                     </div>
                                     <div class="mt-3">
-                                        <label for="" class="form-label">Password</label>
-                                        <input type="password" class="form-control u-box-shadow-1" name="" />
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control u-box-shadow-1" name="password" />
                                     </div>
                                     <div class="mt-5">
-                                        <div class="btn btn-green">Sign In</div>
+                                        <button class="btn btn-green">Sign In</button>
                                     </div>
                                 </form>
+                                <!-- Login form end -->
                                 <div class="links">
                                     <p>
                                         <a href="{{route('register')}}">Need an account?</a>

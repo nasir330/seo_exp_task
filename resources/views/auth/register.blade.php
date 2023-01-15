@@ -29,21 +29,22 @@
                 Sign up is easy and free. You don't pay anything until you're ready to
                 order content.
             </p>
-            <form action="">
+            <form action="{{route('register')}}" method="post">
+                @csrf
                 <div class="mt-3">
-                    <label for="" class="form-label">First Name</label>
-                    <input type="text" class="form-control u-box-shadow-1" name="" />
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control u-box-shadow-1" name="name" />
                 </div>
                 <div class="mt-3">
-                    <label for="" class="form-label">Email</label>
-                    <input type="email" class="form-control u-box-shadow-1" name="" />
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control u-box-shadow-1" name="email" />
                 </div>
                 <div class="mt-3">
-                    <label for="" class="form-label">Password</label>
-                    <input type="password" class="form-control u-box-shadow-1" name="" />
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control u-box-shadow-1" name="password" />
                 </div>
                 <div class="mt-5">
-                    <div class="btn btn-blue">Sign Up</div>
+                    <button class="btn btn-blue">Sign Up</button>
                 </div>
             </form>
             <p class="privacy-links mt-5">
