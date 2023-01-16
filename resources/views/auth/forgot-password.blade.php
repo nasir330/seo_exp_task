@@ -35,4 +35,4 @@
     </main>
    
 <!-- include theme footer -->
-<!-- <x-footer /> -->
+<x-footer />
