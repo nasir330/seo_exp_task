@@ -16,13 +16,14 @@
                         <div class="card">
                             <div class="card-title">Forgot Password</div>
                             <div class="card-body">
-                                <form action="">
+                            <form method="POST" action="{{ route('password.email') }}">
+        @csrf
                                     <div class="mt-3">
-                                        <label for="" class="form-label">Email</label>
-                                        <input type="email" class="form-control u-box-shadow-1" name="" />
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control u-box-shadow-1" name="email" />
                                     </div>
                                     <div class="my-5">
-                                        <div class="btn btn-green">Request Password</div>
+                                        <button class="btn btn-green">Request Password</button>
                                     </div>
                                 </form>
                             </div>
@@ -34,4 +35,4 @@
     </main>
    
 <!-- include theme footer -->
-<x-footer />
+<!-- <x-footer /> -->
